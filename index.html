@@ -16,38 +16,62 @@
 </head>
 <body>
 
-  <!-- Form starts -->
+    <main>
+        <!-- Form starts -->
 
-  Your Journey to Coding Conf 2025 Starts Here!
+        <form>
+          <h1>
+            Your Journey to Coding Conf 2025 Starts Here!
+          </h1>
+  
+          <p>
+            Secure your spot at next year's biggest coding conference.
+          </p>
 
-  Secure your spot at next year's biggest coding conference.
+          <div>
+            <label for="upload-avatar-input">Upload Avatar</label>
+            <input 
+              type="file" 
+              name="upload-avatar-input" 
+              id="upload-avatar-input" 
+              accept="image/png, image/jpeg" 
+              aria-describedby="upload-avatar-instructions"
+            >
+            <p id="upload-avatar-instructions">
+              Drag and drop or click to upload. Upload your photo (JPG or PNG, max size: 500KB).
+            </p>
+          </div>
 
-  Upload Avatar
-  Drag and drop or click to upload
-  Upload your photo (JPG or PNG, max size: 500KB).
+  
+          <div>
+            <label for="full-name-input">Full Name</label>
+            <input type="text" name="full-name-input" id="full-name-input">
+          </div>
+  
+          Full Name
+  
+          Email Address
+          example@email.com
+  
+          GitHub Username
+          @yourusername
+  
+          Generate My Ticket
+        </form>       
 
-  Full Name
+        <!-- Form ends -->
 
-  Email Address
-  example@email.com
+        <!-- Generated tickets starts -->
 
-  GitHub Username
-  @yourusername
+        Congrats, <!-- Full Name -->! Your ticket is ready.
 
-  Generate My Ticket
+        We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
 
-  <!-- Form ends -->
+        Coding Conf
+        Jan 31, 2025 / Austin, TX
 
-  <!-- Generated tickets starts -->
-
-  Congrats, <!-- Full Name -->! Your ticket is ready.
-
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-
-  Coding Conf
-  Jan 31, 2025 / Austin, TX
-
-  <!-- Generated tickets ends -->
+        <!-- Generated tickets ends -->
+    </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
