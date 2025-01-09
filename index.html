@@ -17,9 +17,8 @@
 <body>
 
     <main>
-        <!-- Form starts -->
-
-        <form>
+        
+        <section>
           <h1>
             Your Journey to Coding Conf 2025 Starts Here!
           </h1>
@@ -28,38 +27,48 @@
             Secure your spot at next year's biggest coding conference.
           </p>
 
-          <div>
-            <label for="upload-avatar-input">Upload Avatar</label>
-            <input 
-              type="file" 
-              name="upload-avatar-input" 
-              id="upload-avatar-input" 
-              accept="image/png, image/jpeg" 
-              aria-describedby="upload-avatar-instructions"
-            >
-            <p id="upload-avatar-instructions">
-              Drag and drop or click to upload. Upload your photo (JPG or PNG, max size: 500KB).
-            </p>
-          </div>
+          <!-- Form starts -->
+          <form>
 
-  
-          <div>
-            <label for="full-name-input">Full Name</label>
-            <input type="text" name="full-name-input" id="full-name-input">
-          </div>
-  
-          Full Name
-  
-          Email Address
-          example@email.com
-  
-          GitHub Username
-          @yourusername
-  
-          Generate My Ticket
-        </form>       
+            <!-- Avatar Upload Section -->
+            <div class="avatar-upload">
+              <label for="upload-avatar-input" aria-label="Upload Avatar" class="avatar-label">
+                <span class="upload-icon">📤</span>
+                Drag and drop or click to upload
+              </label>
+              <input type="file" id="upload-avatar-input" name="upload-avatar-input" accept="image/png, image/jpeg" />
+              <p class="upload-instructions">
+                Upload your photo (JPG or PNG, max size: 500KB).
+              </p>
+            </div>
 
-        <!-- Form ends -->
+            <!-- Full Name Field -->
+            <div>
+              <label for="full-name-input">Full Name</label>
+              <input type="text" aria-label="Full Name" name="full-name-input" id="full-name-input">
+            </div>
+
+             <!-- Email Address Field -->
+            <div>
+              <label for="email-input">Email Address</label>
+              <input type="email" aria-label="Email Address" name="email-input" id="email-input" placeholder="example@email.com">
+            </div>
+
+             <!-- GitHub Username Field -->
+            <div>
+              <label for="github-username-input">GitHub Username</label>
+              <input type="text" aria-label="GitHub Username" name="github-username-input" id="github-username-input" placeholder="@yourusername">
+            </div>
+            
+            <!-- Submit Button -->
+            <input type="submit" value="Generate My Ticket">      
+            
+          </form>       
+
+          <!-- Form ends -->
+        </section>
+        
+          
 
         <!-- Generated tickets starts -->
 
